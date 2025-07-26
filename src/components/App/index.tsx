@@ -1,13 +1,5 @@
-import {useState} from "react";
-
 const App = () => {
-    const [state, setState] = useState(0)
-    return <div>
-        App is here {state}
-        <div>
-            <button onClick={() => setState(prevState => prevState + 1)}>count</button>
-        </div>
-    </div>
-}
+	return <div className="p-12">PERO E NAS</div>;
+};
 
-export {App}
+export { App };

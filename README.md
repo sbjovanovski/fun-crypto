@@ -2,4 +2,4 @@
 $ yarn
 $ yarn dev
 ```
-`localhost:3000`
+Open `localhost:3000`

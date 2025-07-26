@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A crypto platform where users can explore potential token swaps.",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "NODE_ENV=dev npx ts-node build.dev.ts",
     "build": "NODE_ENV=production npx ts-node build.prod.ts",
@@ -12,12 +13,22 @@
   "author": "Slobodan Jovanovski",
   "license": "ISC",
   "devDependencies": {
+    "@biomejs/biome": "^2.1.2",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "esbuild": "^0.25.8",
+    "esbuild-style-plugin": "^1.6.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@funkit/api-base": "^1.9.7",
+    "autoprefixer": "^10.4.21",
+    "dotenv": "^17.2.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   }
 }
