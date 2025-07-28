@@ -21490,9 +21490,9 @@ var App = () => {
     }
     return 0;
   }, [amount, targetPriceData]);
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "flex items-center h-full w-full justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "max-w-1/2 w-full rounded-md p-8 bg-white grid gap-4", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "flex items-center h-full w-full justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "md:max-w-1/2 w-full rounded-md p-8 bg-white grid gap-4", children: [
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "text-3xl text-center text-gray-500", children: "Swap tokens" }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "flex items-center justify-between gap-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "flex flex-col md:flex-row items-center justify-between gap-4", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "w-full", children: [
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: "Source" }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
@@ -21517,7 +21517,10 @@ var App = () => {
       ] })
     ] }),
     error && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "text-red-900 text-sm", children: error }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(CurrencyInput, { currency: "USD", value: amount, onChange: setAmount }),
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "w-full", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: "Amount" }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(CurrencyInput, { currency: "USD", value: amount, onChange: setAmount })
+    ] }),
     !!sourceAmount && !!targetAmount && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { children: isLoadingPriceData ? /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(LoadingSpinner, {}) : /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "bg-[#6da6a1] text-white p-4 rounded-md", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "text-lg border-b-1 mb-2", children: [
         "USD($)",

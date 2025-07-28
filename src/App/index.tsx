@@ -93,9 +93,9 @@ const App = () => {
 
   return (
     <div className='flex items-center h-full w-full justify-center'>
-      <div className='max-w-1/2 w-full rounded-md p-8 bg-white grid gap-4'>
+      <div className='md:max-w-1/2 w-full rounded-md p-8 bg-white grid gap-4'>
         <div className='text-3xl text-center text-gray-500'>Swap tokens</div>
-        <div className='flex items-center justify-between gap-4'>
+        <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
           <div className='w-full'>
             <span>Source</span>
             <Tokens
@@ -114,7 +114,10 @@ const App = () => {
           </div>
         </div>
         {error && <div className='text-red-900 text-sm'>{error}</div>}
-        <CurrencyInput currency='USD' value={amount} onChange={setAmount} />
+        <div className='w-full'>
+          <span>Amount</span>
+          <CurrencyInput currency='USD' value={amount} onChange={setAmount} />
+        </div>
         {!!sourceAmount && !!targetAmount && (
           <div>
             {isLoadingPriceData ? (
